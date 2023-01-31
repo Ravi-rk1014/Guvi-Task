@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        /* Change the background color of the buttons */
+        .custom-button {
+            background-color: #3f51b5;
+            color: #fff;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h1>Welcome to My App</h1>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg custom-button" id="login-button">Login</button>
+                    <button class="btn btn-primary btn-lg custom-button" id="register-button">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("login-button").onclick = function () {
+            location.href = "login.html";
+        };
+        document.getElementById("register-button").onclick = function () {
+            location.href = "register.html";
+        };
+    </script>
+  </body>
+</html>

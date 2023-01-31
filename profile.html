@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        /* Add custom styles for the profile picture */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        /* Add custom styles for the profile card */
+        .profile-card {
+            background-color: #f6f6f6;
+            padding: 30px;
+        }
+    </style>
+    <script src="js/profile.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Profile picture -->
+                <img src="profile.jpg" class="profile-pic mx-auto d-block">
+            </div>
+            <div class="col-md-9">
+                <!-- Profile card -->
+                <div class="card profile-card">
+                    <div class="card-body">
+                        <h2 class="card-title" id="name"></h2>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Age</th>
+                                    <td id="age"></td>
+                                </tr>
+                                <tr>
+                                    <th>DOB</th>
+                                    <td id="dob"></td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td id="email"></td>
+                                </tr>
+                                <tr>
+                                    <th>Contact</th>
+                                    <td id="contact"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
